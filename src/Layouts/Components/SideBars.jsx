@@ -1,3 +1,4 @@
+import { FaUserTie } from "react-icons/fa";
 import { BsToggleOn } from "react-icons/bs";
 import { BsToggleOff } from "react-icons/bs";
 import { GiOpenBook } from "react-icons/gi";
@@ -65,6 +66,11 @@ export default function SideBars()
       label: 'Paramètres',
       icon: <AiOutlineSetting />,
       lien: 'Paramètres'
+    },
+    {
+      label: 'Contactez moi',
+      icon: <FaUserTie />,
+      lien: 'Contact'
     },
   ]
   const handleClick = () =>

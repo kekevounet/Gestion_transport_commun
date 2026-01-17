@@ -12,6 +12,7 @@ import DetailBus from "./Layouts/Pages/Crud/DetailBus.jsx";
 import ModificationBus from "./Layouts/Pages/Crud/ModificationBus.jsx";
 import Paramètres from "./Layouts/Pages/Paramètres.jsx";
 import Pointeur from "./Layouts/Pages/Pointeur.jsx";
+import Contact from "./Layouts/Pages/Contact.jsx";
 export default function App()
 {
   const { theme } = useTheme();
@@ -27,6 +28,7 @@ export default function App()
         <Route path="/Finances" element={ <Finances /> } />
         <Route path="/Paramètres" element={ <Paramètres /> } />
         <Route path="/Pointeur" element={ <Pointeur /> } />
+        <Route path="/Contact" element={ <Contact /> } />
 
         {/* Ajout */}
         <Route path="Bus/Ajout_Bus" element={ <AjoutBus /> } />

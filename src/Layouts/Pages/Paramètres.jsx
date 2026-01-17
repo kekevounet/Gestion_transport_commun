@@ -1,4 +1,4 @@
-import { TiSortNumericallyOutline } from "react-icons/ti";
+import { FaWhatsappSquare } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { CgFacebook } from "react-icons/cg";
 import { FaUserAlt } from "react-icons/fa";
@@ -83,13 +83,13 @@ export default function Paramètres()
               <input onChange={handleChange} value={formData.titre} required name="titre" placeholder="Titre de l'application" className={`text-lg p-2 border-b outline-none focus:border-b-2 bg-transparent placeholder:italic  ${theme === 'clair' ? 'border-black' : 'border-white' }`} />
             </div>
             <div className="flex flex-col space-y-3 w-full h-full">
-              <span className="">Contactez le développeur</span>
+              <span className="">Contact le développeur</span>
               <span className="flex justify-center items-center space-x-5 lg:space-x-8 text-2xl">
                 <a href="mailto:niavo.kevin9@gmail.com" className={`no-underline hover:bg-[var(--couleur)] p-3 rounded-full duration-300 ${style}`}><SiGmail /></a>
                 <a href="https://niavo.netlify.app" className={`no-underline hover:bg-[var(--couleur)] p-3 rounded-full duration-300 ${style}`}><FaUserAlt /></a>
-                <a href="https://niavo.faceboook.com" className={`no-underline hover:bg-[var(--couleur)] p-3 rounded-full duration-300 ${style}`}><CgFacebook /></a>
-                <a href="https://niavo.linke.com" className={`no-underline hover:bg-[var(--couleur)] p-3 rounded-full duration-300 ${style}`}><FaLinkedinIn /></a>
-                <a href="https://niavo.linke.com" className={`no-underline hover:bg-[var(--couleur)] p-3 rounded-full duration-300 ${style}`}><TiSortNumericallyOutline /></a>
+                <a href="https://web.facebook.com/niavo.kevin" className={`no-underline hover:bg-[var(--couleur)] p-3 rounded-full duration-300 ${style}`}><CgFacebook /></a>
+                <a href="https://www.linkedin.com/in/kevin-niavo-39a541286/" className={`no-underline hover:bg-[var(--couleur)] p-3 rounded-full duration-300 ${style}`}><FaLinkedinIn /></a>
+                <a href="https://wa.me/0389423351" className={`no-underline hover:bg-[var(--couleur)] p-3 rounded-full duration-300 ${style}`}><FaWhatsappSquare /></a>
               </span>
 
             </div>

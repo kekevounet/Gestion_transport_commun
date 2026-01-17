@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import { useDonnee } from "./Donnee";
 
@@ -6,7 +6,11 @@ const ThemeContext = createContext();
 
 export function ThemeProvider({ children })
 {
-  const [ theme, setTheme ] = useState('clair');
+  const [ theme, setTheme ] = useState(()=>
+  {
+    const savedTheme = localStorage.getItem('theme');
+    return savedTheme ? JSON.parse(savedTheme) : []
+  });
   const { parametre } = useDonnee();
   const toggleTheme = () =>
   {
@@ -17,6 +21,11 @@ export function ThemeProvider({ children })
       icon:'success',
     })
   };
+
+  useEffect(()=>
+  {
+    localStorage.setItem('theme', JSON.stringify(theme))
+  }, [theme]);
 
   return(
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
